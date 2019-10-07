@@ -1,0 +1,62 @@
+.index-page-wrapper {
+  color: #9A9A9A;
+  .top-bar {
+    height: 5vh;
+  }
+
+  .index-content {
+    height: 95vh;
+
+    .nav {
+      height    : 95vh;
+
+      .category {
+        height: 3rem;
+        font-size: 1rem;
+        text-align: center;
+        &.active {
+          color: #FC7244;
+        }
+      }
+    }
+
+    .dishes {
+      height    : 95vh;
+      font-size: .8rem;
+      padding-right: .5rem;
+
+      .category-name {
+        height: 1rem;
+        font-size: .8rem;
+        line-height: 1rem;
+      }
+
+      .dish {
+        height    : 8rem;
+        box-sizing: border-box;
+        padding   : .6rem 0;
+
+        .desc {
+          margin-left: .5rem;
+          .name {
+            font-size: 1rem;
+            color: #333333;
+          }
+
+          .text {
+            text-overflow: ellipsis;
+            overflow     : hidden;
+            white-space  : nowrap;
+            padding-right: .5rem;
+          }
+        }
+
+        .dish-img {
+          height: 6.8rem;
+          min-width: 6.8rem;
+          border-radius: 5%;
+        }
+      }
+    }
+  }
+}
