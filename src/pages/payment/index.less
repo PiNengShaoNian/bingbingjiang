@@ -1,0 +1,119 @@
+.payment-page {
+  background: #F2F2F2;
+  height    : 100vh;
+
+  .repast-type {
+    width          : 90vw;
+    margin         : .8rem auto;
+    display        : flex;
+    height         : 2.5rem;
+    background     : #fff;
+    padding        : .5rem;
+    align-items    : center;
+    justify-content: space-between;
+
+    .text {
+      flex: 1;
+    }
+
+    .switches {
+      flex           : 1;
+      display        : flex;
+      justify-content: space-between;
+
+      .switch-item {
+        width        : 5rem;
+        height       : 2rem;
+        line-height  : 2rem;
+        text-align   : center;
+        border-radius: 1rem;
+        border       : 1px solid #CCCCCC;
+
+        &.active {
+          border: 1px solid #FF6633;
+          color : #FF6633;
+        }
+      }
+    }
+  }
+
+  .order-detail {
+    margin: .8rem auto;
+    width : 90vw;
+
+    .dish {
+      display      : flex;
+      background   : #fff;
+      padding      : .5rem 0;
+      border-bottom: 1px solid #EAEAEA;
+
+      .image {
+        width : 4rem;
+        height: 4rem;
+        margin: 0 .5rem;
+      }
+
+      .name-count,
+      .sum {
+        margin-top: .5rem;
+      }
+
+      .name-count {
+        .count {
+          font-size : .7rem;
+          margin-top: .3rem;
+          color     : #757575;
+        }
+      }
+
+      .sum {
+        flex        : 1;
+        text-align  : right;
+        margin-right: .8rem;
+      }
+    }
+
+    .aggregate {
+      height       : 3rem;
+      line-height  : 3rem;
+      text-align   : right;
+      padding-right: 1rem;
+      background   : #fff;
+
+      .price-text {
+        font-size  : 1.2rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .bottom-btn {
+    position       : fixed;
+    bottom         : 0;
+    left           : 0;
+    right          : 0;
+    height         : 3rem;
+    background     : #fff;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+
+    .bottom-text {
+      color      : #FF6633;
+      line-height: 3rem;
+      margin-left: 1rem;
+    }
+
+    .btn {
+      height       : 2.5rem;
+      width        : 8rem;
+      background   : #FF6633;
+      color        : #fff;
+      border-radius: 1.2rem;
+      line-height  : 2.5rem;
+      text-align   : center;
+      margin-right : 1rem;
+      
+    }
+  }
+}
